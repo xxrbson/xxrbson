@@ -1,0 +1,21 @@
+buat database (all) = https://laravel.com/docs/7.x/migrations#generating-migrations
+Eloquent Relationships (all) = https://laravel.com/docs/11.x/eloquent-relationships
+seeder (brand, category, user, obat) = https://laravel.com/docs/7.x/seeding
+
+
+
+get province 
+curl --location 'https://api.rajaongkir.com/starter/province' \
+--header 'key: a913ffa688dbfa5a196dce3f06931e49'
+
+get city
+curl --location 'https://api.rajaongkir.com/starter/city?id=&province=5' \
+--header 'key: a913ffa688dbfa5a196dce3f06931e49'
+
+curl --location 'https://api.rajaongkir.com/starter/cost' \
+--header 'content-type: application/x-www-form-urlencoded' \
+--header 'key: a913ffa688dbfa5a196dce3f06931e49' \
+--data-urlencode 'origin=501' \
+--data-urlencode 'destination=114' \
+--data-urlencode 'weight=1700' \
+--data-urlencode 'courier=jne'
